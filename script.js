@@ -19,7 +19,6 @@ async function getMenu() {
     itemDiv.innerHTML = "";
     let addBtnSrc = "https://cdn-icons-png.flaticon.com/128/11528/11528933.png";
     let menuData = await fetchMenu();
-    console.log(menuData);
     if (menuData !== undefined) {
       itemDiv.innerHTML = "";
       menuData.map((item) => {
