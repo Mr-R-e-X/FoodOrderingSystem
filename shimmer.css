@@ -1,0 +1,21 @@
+.shimmer {
+  height: 13rem;
+  width: 17.5rem;
+  padding: 0.5rem;
+  background: linear-gradient(
+    to right,
+    rgb(30, 41, 59) 40%,
+    rgb(2, 6, 23),
+    #383333 60%
+  );
+  background-size: 300%;
+  background-position-x: 100%;
+  animation: shimmer 1.5s infinite linear;
+  border-radius: 12px;
+  cursor: wait;
+}
+@keyframes shimmer {
+  to {
+    background-position-x: 0%;
+  }
+}

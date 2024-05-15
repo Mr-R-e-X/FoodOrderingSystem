@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Souvik's Cousin</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="shimmer.css" />
+  </head>
+  <body
+    class="bg-slate-800 h-full w-full flex flex-row text-white font-popins scrollbar"
+  >
+    <nav
+      id="nav-bar"
+      class="fixed top-0 left-0 lg:sticky flex flex-col justify-between bg-slate-950 h-full min-h-max overflow-y-scroll lg:overflow-hidden min-w-[80%] sm:min-w-[40%] lg:min-w-[25%] p-4 z-10 transition-transform duration-500 ease-in-out transform -translate-x-full lg:translate-x-0 scrollbar"
+    >
+      <div
+        id="res-logo"
+        class="h-[33.33%] min-h-max flex flex-col justify-start items-center my-3 py-2"
+      >
+        <div class="h-[80%]">
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/2763/2763138.png"
+            alt=""
+            height="35px"
+            width="35px"
+            class="absolute nav-tgl top-2 right-2 lg:hidden cursor-pointer"
+          />
+          <img
+            src="./assets/res-logo-298x298.png"
+            alt="Restaurent Logo"
+            title="Restaurent Logo"
+            class="h-full w-auto min-h-max"
+          />
+        </div>
+        <p class="font-xl font-semibold text-center py-1 cursor-pointer">
+          Souvik's Cousin
+        </p>
+        <p class="font-xs text-red-600 text-center cursor-pointer">
+          Don't Think Just Eat
+        </p>
+      </div>
+      <div class="h-[33.33%] min-h-max border-t border-gray-700">
+        <h3 class="text-center pt-2 mt-2 text-base font-medium cursor-pointer">
+          Quick Links
+        </h3>
+        <ol class="mt-2 ml-5">
+          <li class="my-2 text-xs cursor-pointer">1. Home</li>
+          <li class="my-2 text-xs cursor-pointer">2. Your Orders</li>
+          <li class="my-2 text-xs cursor-pointer">3. Wallet</li>
+          <li class="my-2 text-xs cursor-pointer">4. Profile</li>
+          <li class="my-2 text-xs cursor-pointer">5. Logout</li>
+        </ol>
+      </div>
+      <div class="h-[33.33%] min-h-max border-t border-gray-700">
+        <h3 class="text-center pt-2 mt-2 font-medium text-base cursor-pointer">
+          More About Us
+        </h3>
+        <ol class="mt-2 ml-5">
+          <li class="my-2 cursor-pointer text-xs">1. Our Blogs</li>
+          <li class="my-2 cursor-pointer text-xs">2. Upcoming Dishes</li>
+          <li class="my-2 cursor-pointer text-xs">3. Our Story</li>
+          <li class="my-2 cursor-pointer text-xs">4. Social Media</li>
+        </ol>
+      </div>
+    </nav>
+    <main class="flex-1 px-4 h-full py-1 overflow-y-auto scrollbar">
+      <div
+        id="search-bar"
+        class="w-full flex flex-row justify-between items-center"
+      >
+        <div class="mr-2 cursor-pointer nav-tgl lg:hidden">
+          <svg
+            class="w-6 h-6"
+            aria-hidden="true"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              clip-rule="evenodd"
+              fill-rule="evenodd"
+              d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"
+            ></path>
+          </svg>
+        </div>
+        <div class="w-[90%] lg:w-[60%]">
+          <form action="#" method="post">
+            <div class="relative">
+              <div
+                class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
+              >
+                <svg
+                  class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                  aria-hidden="true"
+                  fill="none"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                  />
+                </svg>
+              </div>
+              <input
+                type="search"
+                id="default-search"
+                class="block w-full font-normal px-2 py-2 ps-10 text-sm border border-gray-600 rounded-lg bg-gray-700 text-gray-400 focus:outline-none"
+                placeholder="Search Food Item"
+                required
+              />
+            </div>
+          </form>
+        </div>
+        <div class="w-max bg-red-600 rounded-md mx-1 hidden md:block">
+          <button class="px-6 py-[6px]">Signup</button>
+        </div>
+        <div class="w-max bg-red-600 rounded-md mx-1 hidden md:block">
+          <button class="px-6 py-[6px]">Login</button>
+        </div>
+        <div class="hidden lg:block">
+          <img src="./assets/res-logo-298x298.png" height="48px" width="48px" />
+        </div>
+      </div>
+      <div id="banner" class="my-2 h-[300px] w-full rounded-lg">
+        <div class="h-full rounded-lg">
+          <img
+            src="./assets/banner.png"
+            alt=""
+            class="h-full w-full object-cover object-left rounded-3xl"
+          />
+        </div>
+      </div>
+      <div
+        id="items"
+        class="flex flex-row flex-wrap justify-around scroll-smooth"
+      >
+        <!-- <div class="shimmer"></div> -->
+      </div>
+    </main>
+    <script src="respn.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
