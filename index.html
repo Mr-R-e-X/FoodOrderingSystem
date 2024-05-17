@@ -11,18 +11,18 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="shimmer.css" />
   </head>
-  <body
-    class="bg-slate-800 h-full w-full flex flex-row text-white font-popins scrollbar"
-  >
+  <body class="bg-slate-800 h-full w-full flex flex-row text-white font-popins">
+    <!-- Navbar -->
+
     <nav
       id="nav-bar"
-      class="fixed top-0 left-0 lg:sticky flex flex-col justify-between bg-slate-950 h-full max-h-max min-w-[80%] sm:min-w-[40%] lg:min-w-[25%] p-4 z-10 transition-transform duration-500 ease-in-out transform -translate-x-full lg:translate-x-0 scrollbar"
+      class="fixed top-0 left-0 lg:sticky flex flex-col justify-between bg-slate-950 h-full max-h-max min-w-[80%] sm:min-w-[40%] lg:min-w-[25%] p-4 z-10 transition-transform duration-500 ease-in-out transform -translate-x-full lg:translate-x-0"
     >
       <div
         id="res-logo"
-        class="h-[33.33%] flex flex-col justify-start items-center my-3 py-2"
+        class="h-[33.33%] flex flex-col justify-start items-center my-1 py-2"
       >
-        <div class="h-[80%]">
+        <div class="h-[70%]">
           <img
             src="https://cdn-icons-png.flaticon.com/128/2763/2763138.png"
             alt=""
@@ -37,10 +37,10 @@
             class="h-full w-auto"
           />
         </div>
-        <p class="font-xl font-semibold text-center py-1 cursor-pointer">
+        <p class="text-xl font-semibold text-center py-1 cursor-pointer">
           Souvik's Cousin
         </p>
-        <p class="font-xs text-red-600 text-center cursor-pointer">
+        <p class="text-xs text-red-600 text-center cursor-pointer">
           Don't Think Just Eat
         </p>
       </div>
@@ -68,10 +68,13 @@
         </ol>
       </div>
     </nav>
-    <main class="flex-1 px-4 h-full py-1 overflow-y-auto scrollbar">
+
+    <!-- Main -->
+    <main class="flex-1 px-4 h-full py-1 overflow-y-auto">
+      <!-- Search bar -->
       <div
         id="search-bar"
-        class="w-full flex flex-row justify-between items-center"
+        class="sticky top-0 w-full flex flex-row justify-between items-center bg-slate-800 py-4 z-20"
       >
         <div class="mr-2 cursor-pointer nav-tgl lg:hidden">
           <svg
@@ -88,14 +91,14 @@
             ></path>
           </svg>
         </div>
-        <div class="w-[90%] lg:w-[60%]">
+        <div class="w-[90%] lg:w-[60%] relative">
           <form action="#" method="post">
             <div class="relative">
               <div
-                class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
+                class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
               >
                 <svg
-                  class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                  class="w-4 h-4 text-gray-500"
                   aria-hidden="true"
                   fill="none"
                   viewBox="0 0 20 20"
@@ -112,14 +115,14 @@
               <input
                 type="search"
                 id="default-search"
-                class="block w-full font-normal px-2 py-2 ps-10 text-sm border border-gray-600 rounded-lg bg-gray-700 text-gray-400 focus:outline-none"
+                class="block w-full font-normal px-2 py-2 pl-10 text-sm border border-gray-600 rounded-lg bg-gray-700 text-gray-400 focus:outline-none"
                 placeholder="Search Food Item"
                 required
               />
             </div>
           </form>
         </div>
-        <div class="w-max bg-red-600 rounded-md mx-1 hidden md:block">
+        <div class="w-max bg-red-600 rounded-md ml-2 mx-1 hidden md:block">
           <button class="px-6 py-[6px]">Signup</button>
         </div>
         <div class="w-max bg-red-600 rounded-md mx-1 hidden md:block">
@@ -129,6 +132,9 @@
           <img src="./assets/res-logo-298x298.png" height="48px" width="48px" />
         </div>
       </div>
+
+      <!-- Banner -->
+
       <div id="banner" class="my-2 h-[300px] w-full rounded-lg">
         <div class="h-full rounded-lg">
           <img
@@ -138,14 +144,14 @@
           />
         </div>
       </div>
+      <!-- Menu -->
       <div>
-        <h1 class="text-xl">Menu</h1>
+        <h1 class="text-xl font-bold">Menu</h1>
+        <!-- Menu Items -->
         <div
           id="items"
           class="flex flex-row flex-wrap justify-around scroll-smooth"
-        >
-          <!-- <div class="shimmer"></div> -->
-        </div>
+        ></div>
       </div>
     </main>
     <script src="respn.js"></script>
